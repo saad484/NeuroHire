@@ -119,8 +119,8 @@ yarn dev
 ## 👨‍💻 Team
 
 NeuroHire was developed by a passionate team of developers for the 2025 AI Innovation Hackathon.
-- **[Saad AIDDI]** - CyberSecurity Engineer (Team Leader) 
-- **[Abdelhamid Sebbar]** - Data Engineer
+- **Saad AIDDI** - CyberSecurity Engineer (Team Leader) 
+- **Abdelhamid Sebbar** - Data Engineer
 - **Ilyas Farkhane** - Full Stack Developer
 
 
