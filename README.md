@@ -1,6 +1,7 @@
 # NeuroHire 🧠
 
-![NeuroHire Logo](https://i.ibb.co/YL1ccmm/neurohire-logo.png)
+
+![alt text](NeuroHire.png) 
 
 > **AI-Powered Recruitment Platform for Modern Hiring Teams**
 
