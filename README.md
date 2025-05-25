@@ -77,7 +77,7 @@ https://youtu.be/LJ6uMjVHGxk
 ### Backend Setup
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/neurohire.git
+git clone https://github.com/saad484/neurohire.git
 cd neurohire/NEUROHIRE_Backend
 
 # Create a virtual environment
