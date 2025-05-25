@@ -17,6 +17,8 @@ NeuroHire is an intelligent recruitment platform that leverages cutting-edge AI 
 ![alt text](image.png)
 
 
+## ▶️ Demo Link
+https://youtu.be/LJ6uMjVHGxk
 
 
 ## ✨ Key Features
