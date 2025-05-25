@@ -13,8 +13,10 @@
 NeuroHire is an intelligent recruitment platform that leverages cutting-edge AI technologies to revolutionize the hiring process. Our system automatically analyzes resumes, evaluates candidates against job requirements, and provides rich insights to help recruiters make better hiring decisions faster.
 
 <p align="center">
-  <img src="https://i.ibb.co/6RrS5kZ/neurohire-dashboard.png" alt="NeuroHire Dashboard" width="80%">
+  ![alt text](image.png)
 </p>
+
+
 
 ## ✨ Key Features
 
