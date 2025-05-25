@@ -115,22 +115,14 @@ yarn dev
 
 ![alt text](image-1.png)
 
-## 📊 Demo
-
-### Candidate Analysis
-![Candidate Analysis](https://i.ibb.co/qFJ7Hxm/neurohire-candidate-analysis.png)
-
-### Job Matching
-![Job Matching](https://i.ibb.co/NjQPz1G/neurohire-job-matching.png)
 
 ## 👨‍💻 Team
 
 NeuroHire was developed by a passionate team of developers for the 2025 AI Innovation Hackathon.
+- **[Saad AIDDI]** - CyberSecurity Engineer (Team Leader) 
+- **[Abdelhamid Sebbar]** - Data Engineer
+- **Ilyas Farkhane** - Full Stack Developer
 
-- **Ilyas Farkhane** - Full Stack Developer & ML Engineer
-- **[Team Member]** - [Role]
-- **[Team Member]** - [Role]
-- **[Team Member]** - [Role]
 
 ## 📄 License
 
