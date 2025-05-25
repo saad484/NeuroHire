@@ -1,43 +1,24 @@
-"use server"
+// Client-side helper for API endpoints
+const API_BASE_URL = "http://localhost:8000";
 
-export async function uploadFile(formData: FormData) {
-  // This is a placeholder for actual file upload logic
-  // In a real application, you would:
-  // 1. Extract the file from formData
-  // 2. Validate the file (size, type, etc.)
-  // 3. Upload to a storage service (e.g., Vercel Blob, AWS S3, etc.)
-  // 4. Return the result
+// This file contains client-side API helper functions
+// These are not server actions and should be imported from client components only
 
-  try {
-    // Simulate processing time
-    await new Promise((resolve) => setTimeout(resolve, 1000))
+export const API_ENDPOINTS = {
+  // Authentication
+  TOKEN_AUTH: `${API_BASE_URL}/api-token-auth/`,
+  
+  // Resume parsing
+  UPLOAD_RESUME: `${API_BASE_URL}/api/upload-resume/`,
+  RESUMES: `${API_BASE_URL}/api/resumes/`,
+  PARSED_RESUMES: `${API_BASE_URL}/api/parsed-resumes/`,
+  
+  // Job matching
+  JOBS: `${API_BASE_URL}/api/jobs/`,
+  MATCHES: `${API_BASE_URL}/api/matches/`,
+  
+  // Candidates
+  CANDIDATES: `${API_BASE_URL}/api/candidates/`,
+  SOCIAL_PROFILES: `${API_BASE_URL}/api/social-profiles/`,
+};
 
-    const file = formData.get("file") as File
-
-    if (!file) {
-      return { success: false, error: "No file provided" }
-    }
-
-    // Check file size (example: 10MB limit)
-    if (file.size > 10 * 1024 * 1024) {
-      return { success: false, error: "File size exceeds 10MB limit" }
-    }
-
-    // In a real application, you would upload the file to a storage service here
-    // For example, with Vercel Blob:
-    // const blob = await put(`uploads/${file.name}`, file, { access: 'public' });
-    // return { success: true, url: blob.url };
-
-    console.log(`File "${file.name}" would be uploaded (${file.size} bytes)`)
-
-    return {
-      success: true,
-      fileName: file.name,
-      fileSize: file.size,
-      // url: blob.url // In a real application with storage
-    }
-  } catch (error) {
-    console.error("Error uploading file:", error)
-    return { success: false, error: "Failed to upload file" }
-  }
-}

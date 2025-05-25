@@ -6,7 +6,7 @@ import { useState, useRef } from "react"
 import { Button } from "@/components/ui/button"
 import { Progress } from "@/components/ui/progress"
 import { Upload, X, FileText, Check } from "lucide-react"
-import { uploadFile } from "@/app/actions"
+import { API_ENDPOINTS } from "@/app/actions"
 
 export function FileUpload() {
   const [files, setFiles] = useState<File[]>([])
@@ -69,8 +69,19 @@ export function FileUpload() {
         const formData = new FormData()
         formData.append("file", file)
 
-        // Call the server action to handle the upload
-        const result = await uploadFile(formData)
+        // Use fetch directly to upload the file to our Django backend
+        const response = await fetch(API_ENDPOINTS.UPLOAD_RESUME, {
+          method: "POST",
+          body: formData,
+          // No credentials needed since we've configured AllowAny permission
+        })
+
+        if (!response.ok) {
+          throw new Error(`Upload failed with status: ${response.status}`)
+        }
+
+        const result = await response.json()
+        console.log("Upload result:", result)
 
         if (result.success) {
           setUploadedFiles((prev) => [...prev, file.name])

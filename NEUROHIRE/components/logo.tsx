@@ -9,12 +9,18 @@ export function Logo() {
 
       {/* Logo text */}
       <div className="hidden md:block">
-        <h2 className="text-xl font-bold text-white group-hover:text-purple-200 transition-colors duration-300">
+        {/* <h2 className="text-xl font-bold text-white group-hover:text-purple-200 transition-colors duration-300">
           NeuroHire
-        </h2>
-        <p className="text-xs text-gray-400 group-hover:text-gray-300 transition-colors duration-300">
+        </h2> */}
+        <img
+          src="/logo.png"
+          alt="CosmicCloud Logo"
+        className="w-20 h-20 rounded-full object-cover group-hover:opacity-90 transition-opacity duration-300"
+        />
+
+        {/* <p className="text-xs text-gray-400 group-hover:text-gray-300 transition-colors duration-300">
          RH SOLUTION
-        </p>
+        </p> */}
       </div>
 
       {/* Mobile logo text (shorter) */}
