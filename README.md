@@ -135,8 +135,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - Google for providing access to their Generative AI capabilities
 - The open-source community for the amazing tools and libraries
-- Our mentors and advisors who provided valuable feedback
-
 ---
 
 <p align="center">
